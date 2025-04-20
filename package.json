@@ -1,0 +1,22 @@
+{
+  "name": "netx",
+  "version": "1.0.0",
+  "description": "Netx is a lightweight and powerful utility library for Next.js that simplifies and enhances API calls and Server Actions management.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GhosTHaise/netx.git"
+  },
+  "keywords": [
+    "nextJs"
+  ],
+  "author": "GhosTHaise",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GhosTHaise/netx/issues"
+  },
+  "homepage": "https://github.com/GhosTHaise/netx#readme"
+}

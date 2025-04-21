@@ -3,12 +3,12 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { retry, RetryOptions, exponentialBackoff } from '../core/retry';
 
-interface UseActionOptions extends RetryOptions {
+export interface UseActionOptions extends RetryOptions {
   onSuccess?: (data: any) => void;
   onError?: (error: Error) => void;
 }
 
-interface UseActionState<TResult> {
+export interface UseActionState<TResult> {
   data: TResult | null;
   error: Error | null;
   isLoading: boolean;

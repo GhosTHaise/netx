@@ -2,21 +2,35 @@
   "name": "netx",
   "version": "1.0.0",
   "description": "Netx is a lightweight and powerful utility library for Next.js that simplifies and enhances API calls and Server Actions management.",
-  "main": "index.ts",
+"main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts", 
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "generate-types": "ts-node ./scripts/generate.ts",
+    "prepublishOnly": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GhosTHaise/netx.git"
+  "peerDependencies": {
+    "react": ">=18",
+    "next": ">=14"
   },
-  "keywords": [
-    "nextJs"
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "next": "^14.1.1",
+    "react": "^18.2.0",
+    "ts-morph": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "generated"
   ],
-  "author": "GhosTHaise",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/GhosTHaise/netx/issues"
+  "publishConfig": {
+    "access": "public"
   },
-  "homepage": "https://github.com/GhosTHaise/netx#readme"
+  "license": "MIT"
 }

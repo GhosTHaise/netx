@@ -5,7 +5,7 @@
     "email": "ghost@gmail.com",
     "url": "https://fitiavanasambatraportfolio.netlify.app/"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Netx is a lightweight and powerful utility library for Next.js that simplifies and enhances API calls and Server Actions management.",
 "main": "dist/index.js",
   "module": "dist/index.mjs",

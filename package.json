@@ -1,5 +1,10 @@
 {
-  "name": "netx",
+  "name": "@ghosthaise/netx-actions",
+  "author": {
+    "name": "GhostHaise",
+    "email": "ghost@gmail.com",
+    "url": "https://fitiavanasambatraportfolio.netlify.app/"
+  },
   "version": "1.0.0",
   "description": "Netx is a lightweight and powerful utility library for Next.js that simplifies and enhances API calls and Server Actions management.",
 "main": "dist/index.js",
@@ -29,6 +34,14 @@
     "dist",
     "generated"
   ],
+  "keywords": [
+    "nextJS",
+    "server-actions"
+  ],
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/GhosTHaise/netx"
+  },
   "publishConfig": {
     "access": "public"
   },
